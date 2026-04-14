@@ -26,11 +26,21 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env
 
 # Installer logs
 pip-log.txt
@@ -138,6 +148,9 @@ celerybeat.pid
 .env
 .envrc
 .venv
+.env.local
+backend/.env.local
+frontend/.env.local
 env/
 venv/
 ENV/
